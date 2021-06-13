@@ -4,7 +4,7 @@ on:
   push:
     branches:
 #      - 'master'
-      - 'arm'
+      - 'multiarch'
   pull_request:
     branches:
       - 'master'
@@ -32,8 +32,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v2
         with:
-          context: ./10
-	  file: ./Dockerfile
+          context: .
           platforms: linux/amd64,linux/arm64
           push: true
           tags: agpenton/bitnami-shell:latest
