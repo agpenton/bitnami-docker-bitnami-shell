@@ -6,7 +6,7 @@
 # TL;DR
 
 ```console
-$ docker run --name bitnami-shell bitnami/bitnami-shell:latest
+$ docker run --name bitnami-shell agpenton/bitnami-shell:latest
 ```
 
 # Why use Bitnami Images?
